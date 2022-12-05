@@ -17,3 +17,8 @@ s3forloop={
         "Purpose"="assignment22",
     }
 }
+
+amiid="ami-074dc0a6f6c764218"
+instance_type="t2.micro"
+owner="HarshMittal-cloudeq"
+purpose="Aws-instance from terraform sprint 2 assignment"

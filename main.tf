@@ -1,12 +1,12 @@
 resource "aws_instance" "awsInstance" {
   count=length(var.ec2tagname)
-  ami = "ami-074dc0a6f6c764218"
-  instance_type = "t2.micro"
+  ami = var.amiid
+  instance_type = var.instance_type
 
   tags = {
    Name = var.ec2tagname[count.index],
-   Owner = "HarshMittal-cloudeq",
-   Purpose = "Aws-instance from terraform sprint 2 assignment"
+   Owner = var.owner,
+   Purpose = var.purpose
   }
 }
 
